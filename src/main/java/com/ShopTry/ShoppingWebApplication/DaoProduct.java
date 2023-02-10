@@ -1,9 +1,10 @@
 package com.ShopTry.ShoppingWebApplication;
 
+import java.util.List;
+
+import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.shoppingCart.ShopTry.Product;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
@@ -32,5 +33,10 @@ public class DaoProduct {
 	public void deleteProd (int id) {
 		Product prdt=getProduct(id);
 		enty.detach(prdt);
+	}
+	
+	public List<Product> allProducts(){
+		Query qr=(Query) enty.createQuery("select p from product p order by id asc");
+		return qr.getResultList();
 	}
 }
