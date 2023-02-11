@@ -2,7 +2,6 @@ package com.ShopTry.ShoppingWebApplication;
 
 
 import java.util.List;
-
 import org.hibernate.query.Query;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
