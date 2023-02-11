@@ -12,10 +12,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.shoppingCart.ShopTry.Orders;
-import com.shoppingCart.ShopTry.Product;
-
-
 @Controller
 public class ControllerUser {
 
