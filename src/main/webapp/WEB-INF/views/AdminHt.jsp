@@ -3,8 +3,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta charset="ISO-8859-1">
+<title>Admin</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .cntr{
+            padding-top:50px;
+            
+        }
+        .img2{
+            height:190px;
+        }
+        body{
+            background-color: rgb(218, 250, 250);
+        }
+        .msg{
+            color: tomato;
+            font-size: 18px;
+            padding-top: 10px;
+            text-align: center;
+        }
+        .nav-item{
+         padding-left: 10px;
+       }
+    </style>
 </head>
 <body>
 
