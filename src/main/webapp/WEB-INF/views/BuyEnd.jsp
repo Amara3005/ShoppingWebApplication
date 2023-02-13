@@ -22,5 +22,21 @@
 </head>
 <body>
 
+    <div class="container bg">
+        <header class="d-flex flex-wrap justify-content-end py-3 mb-4 border-bottom">
+          <ul class="nav nav-pills  ">
+            <li class="nav-item"><a href="/"> <button type="button" class="btn btn-outline-primary">Home</button></a></li>
+            <li class="nav-item"><a href="/products" ><button type="button" class="btn btn-outline-warning">Products</button></a></li>
+            <li class="nav-item"><a href="/about"><button type="button" class="btn btn-outline-success">About</button></a></li>
+          </ul>
+        </header>
+      </div>
+
+      <div class="text-center error">Your Order has been confirmed and will be delivered to mentioned address.</div>
+      <p class="fst-italic"><div class="text-center error">Order Id:- ${orderid}</div></p>
+      <div class="text-center error">Total Cost:- ${total}, should be paid during delivery</div>
+      <div class="text-center error">Press below button in order to Purchase more Products.</div>
+      <div class="text-center error"><a href="/products" ><button type="button" class="btn btn-success">Products</button></a></div>
+
 </body>
 </html>

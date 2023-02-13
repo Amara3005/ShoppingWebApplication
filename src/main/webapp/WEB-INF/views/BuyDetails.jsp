@@ -29,6 +29,50 @@
     </style>
 </head>
 <body>
+   
+    <div class="container bg">
+        <header class="d-flex flex-wrap justify-content-end py-3 mb-4 border-bottom">
+          <ul class="nav nav-pills  ">
+            <li class="nav-item"><a href="/"> <button type="button" class="btn btn-outline-primary">Home</button></a></li>
+            <li class="nav-item"><a href="/about"><button type="button" class="btn btn-outline-success">About</button></a></li>
+          </ul>
+        </header>
+      </div>
 
+      <div class ="crd">
+        <div class="card text-dark  border-info mb-3"  style="max-width: 400px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="${prdt.img}" 
+                class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body bg-light">
+                  <h5 class="card-title">${prdt.name} </h5>
+                  <p class="card-text"> Cost per kg:- ${prdt.cost} <br> Quantity avilable in kg's:- ${prdt.qnty}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         
+       
+
+      
+        <form action="/BuyPrdt/${prdt.id}" method="post"  class="form-container">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Quantity Needed in kg's</label>
+              <input type="number" class="form-control" id="user" name="need" value="0" min="1" max="${prdt.qnty}" style=" width:250px;" required>
+            </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave address here" id="address" name="address" style="height: 100px; width:500px;" required></textarea>
+                <label for="floatingTextarea2">Address Details</label>
+              </div>
+              <br>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+      
+          <br><br>
 </body>
 </html>
