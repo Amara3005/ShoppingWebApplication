@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta charset="ISO-8859-1">
+<title>View all Products</title>
 </head>
 <body>
 
