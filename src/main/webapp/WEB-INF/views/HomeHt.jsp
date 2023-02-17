@@ -38,6 +38,36 @@
      </style>
 </head>
 <body>
+  <div class="container bg">
+        <header class="d-flex flex-wrap justify-content-end py-3 mb-4 border-bottom">
+          <ul class="nav nav-pills  ">
+            <li class="nav-item"><a href="/"> <button type="button" class="btn btn-outline-primary">Home</button></a></li>
+            <!--<li class="nav-item"><a href="#" ><button type="button" class="btn btn-outline-warning">Primary</button></a></li>-->
+            <li class="nav-item"><a href="/about"><button type="button" class="btn btn-outline-success">About</button></a></li>
+          </ul>
+        </header>
+      </div>
+   
+   <div class="text-left error">${message}</div>
 
+    <div class="head"> <br>
+    <p class="fs-3 text-center">Welcome to ShopTry Page</p></div>
+    
+    <form action="/login" method="post" class="form-container">
+        <div class="row justify-content-center ">
+        <div class="col-12 col-sm-6 col-md-3 ">
+        <div class="mb-3 ">
+            <label for="user" class="form-label">User Name</label>
+            <input type="text" class="form-control" id="user" name="user" placeholder="User Name">
+          </div>
+          <div class="mb-3 ">
+            <label for="Pass" class="form-label">Password</label>
+            <input type="password" class="form-control" id="Pass" name="Pass" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        <br><br>
+      </form>
 </body>
 </html>
