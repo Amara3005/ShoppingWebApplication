@@ -23,6 +23,36 @@
      </style>
 </head>
 <body>
-
+ <p class="h3">Add New Product Details</p>
+    <br><br>
+    <form action="/newProduct" method="post" class="form-container" modelattribute="product">
+        <div class="row justify-content-center ">
+        <div class="col-12 col-sm-6 col-md-3 ">
+            <div class="mb-3 ">
+                <label for="id" class="form-label">Id</label>
+                <input type="number" class="form-control" id="id" name="id" placeholder="Id" required>
+              </div>
+            <div class="mb-3 ">
+            <label for="user" class="form-label">Product Name</label>
+            <input type="text" class="form-control" id="user" name="name" placeholder="Name" required>
+          </div>
+          <div class="mb-3 ">
+            <label for="Pass" class="form-label">Cost</label>
+            <input type="number" class="form-control" id="Pass" name="cost" placeholder="Cost" required>
+          </div>
+          <div class="mb-3 ">
+            <label for="Quantity" class="form-label">Quantity in kg's</label>
+            <input type="number" class="form-control" id="Quantity" name="qnty" placeholder="0" required>
+          </div>
+          <div class="mb-3 ">
+            <label for="Image" class="form-label">Url (image of the Product)</label>
+            <input type="url" class="form-control" id="Image" name="img" placeholder="link" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        <br>
+      </form>
+      <p class="msg">${message}</p>
 </body>
 </html>
